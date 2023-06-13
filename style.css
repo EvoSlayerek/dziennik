@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Determination';
+  src: url(Determination.ttf);
+  }
+
+
+
+a {
+  color:rgb(39, 203, 209);
+  text-decoration:none;
+}
+* {
+  outline:0;
+  
+}
+body {
+  margin-top:10px;
+  background-image: url("tlo.png"); 
+  font-size:11px;
+  color:rgb(84, 173, 189);
+  font-family:"Determination", sans-serif;
+  color:
+}
+
+.container  {
+  max-width:1140px;
+  margin:0 auto; 
+  display:block;
+}
+.row  {
+  display:flex;
+  align-items:center
+}
+
+.thumb-box {
+  display:flex;
+  max-width:33.3333%;
+  margin:0 15px;
+  position:relative;
+
+   
+    
+}
+
+
+.thumb-box a {
+  padding:0;
+  position: relative;
+    width: 100%;
+    height: 100%;
+  z-index:9997;
+}
+
+.thumb-box img {
+ 
+    width:100%;
+    height:280px;
+    float:left;
+    border-style: solid;
+    border-color: #49c792;
+    border-radius: 3px;
+  }
+
+.overlay-box {
+  position:absolute;
+  bottom:3px;
+  width:90%;
+  z-index:9998;
+  left:3px;
+  padding:5%;
+      background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.75));
+}
+
+.meta {
+  font-size:14px;
+  display:block;
+  
+}
+
+.main-title {
+  font-size:30px;
+  display:block;
+  text-shadow:0 0 1px rgba(0,0,0,0.5);
+}
+
+.description {
+  color:rgb(108, 203, 216);
+  font-size:16px;
+  margin-top:5px; 
+  display:block;
+  color: rgb(84, 173, 189);
+    max-height: 0;
+    line-height: 18px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease-out, max-height 0.4s ease-out, margin 0.4s;
+}
+
+.thumb-box a:hover .description {
+    opacity:1;
+        max-height: 100px;
+        margin-top: 5px;
+        transition: opacity 0.4s ease-out, max-height 0.9s ease-out
+}
+
+.thumb-box a:hover .overlay-box {
+  background-image: linear-gradient(to bottom, transparent, rgba(0,0,0, 1));
+
+}
+
+
